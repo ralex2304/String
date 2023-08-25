@@ -139,7 +139,7 @@ ssize_t cus_getline(char** str, size_t* cnt, FILE* stream) {
             return -1;
         *str[i] = (char)c;
     }
-    str[i] = '\0';
+    *str[i] = '\0';
 
     return i;
 }

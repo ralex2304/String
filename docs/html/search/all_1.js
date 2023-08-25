@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['color_5fblack_0',['COLOR_BLACK',['../console_8h.html#aba2a7fe77a7501e5844370eec0185207',1,'console.h']]],
+  ['color_5fblue_1',['COLOR_BLUE',['../console_8h.html#a23c70d699a5a775bc2e1ebeb8603f630',1,'console.h']]],
+  ['color_5fgreen_2',['COLOR_GREEN',['../console_8h.html#afc9149f5de51bd9ac4f5ebbfa153f018',1,'console.h']]],
+  ['color_5fred_3',['COLOR_RED',['../console_8h.html#ad86358bf19927183dd7b4ae215a29731',1,'console.h']]],
+  ['color_5fwhite_4',['COLOR_WHITE',['../console_8h.html#a9b44987ffdc2af19b635206b94334b69',1,'console.h']]],
+  ['color_5fyellow_5',['COLOR_YELLOW',['../console_8h.html#a4534b577b74a58b0f4b7be027af664e0',1,'console.h']]],
+  ['console_2eh_6',['console.h',['../console_8h.html',1,'']]],
+  ['console_5fgreen_7',['CONSOLE_GREEN',['../console_8h.html#a3d65c0a458538bfc412e586e89dbf130',1,'console.h']]],
+  ['console_5fred_8',['CONSOLE_RED',['../console_8h.html#ad220b7c98ce4bd06bf25860ca62d7aba',1,'console.h']]],
+  ['cus_5ffgets_9',['cus_fgets',['../custom__strings_8cpp.html#a95542a6257046526668ce27c3b14fa11',1,'cus_fgets(char *str, int cnt, FILE *stream):&#160;custom_strings.cpp'],['../custom__strings_8h.html#a95542a6257046526668ce27c3b14fa11',1,'cus_fgets(char *str, int cnt, FILE *stream):&#160;custom_strings.cpp']]],
+  ['cus_5fgetline_10',['cus_getline',['../custom__strings_8cpp.html#ac2a89efa37878184384aa458345c2de1',1,'cus_getline(char **str, size_t *cnt, FILE *stream):&#160;custom_strings.cpp'],['../custom__strings_8h.html#ac2a89efa37878184384aa458345c2de1',1,'cus_getline(char **str, size_t *cnt, FILE *stream):&#160;custom_strings.cpp']]],
+  ['cus_5fputs_11',['cus_puts',['../custom__strings_8cpp.html#a5ea80a5c1a98566aef41fb945acb2358',1,'cus_puts(const char *str):&#160;custom_strings.cpp'],['../custom__strings_8h.html#a5ea80a5c1a98566aef41fb945acb2358',1,'cus_puts(const char *str):&#160;custom_strings.cpp']]],
+  ['cus_5fstrcat_12',['cus_strcat',['../custom__strings_8cpp.html#a4087db052ed15acf4cf8a72576970fe9',1,'cus_strcat(char *dest, const char *src):&#160;custom_strings.cpp'],['../custom__strings_8h.html#a4087db052ed15acf4cf8a72576970fe9',1,'cus_strcat(char *dest, const char *src):&#160;custom_strings.cpp']]],
+  ['cus_5fstrchr_13',['cus_strchr',['../custom__strings_8cpp.html#a51efb571ca0af11131b7701a6e0175fa',1,'cus_strchr(const char *str, const int symbol):&#160;custom_strings.cpp'],['../custom__strings_8h.html#a51efb571ca0af11131b7701a6e0175fa',1,'cus_strchr(const char *str, const int symbol):&#160;custom_strings.cpp']]],
+  ['cus_5fstrcpy_14',['cus_strcpy',['../custom__strings_8cpp.html#ad74bfdd7b2e8de96555d5e36276a4dbf',1,'cus_strcpy(char *dest, const char *src):&#160;custom_strings.cpp'],['../custom__strings_8h.html#ad74bfdd7b2e8de96555d5e36276a4dbf',1,'cus_strcpy(char *dest, const char *src):&#160;custom_strings.cpp']]],
+  ['cus_5fstrdup_15',['cus_strdup',['../custom__strings_8cpp.html#a8a6f5a4fda330c42fef06c05f9ef532b',1,'cus_strdup(const char *str):&#160;custom_strings.cpp'],['../custom__strings_8h.html#a8a6f5a4fda330c42fef06c05f9ef532b',1,'cus_strdup(const char *str):&#160;custom_strings.cpp']]],
+  ['cus_5fstrlen_16',['cus_strlen',['../custom__strings_8cpp.html#a0589e4c55ae3c392add2be7ddfef5743',1,'cus_strlen(const char *str):&#160;custom_strings.cpp'],['../custom__strings_8h.html#a0589e4c55ae3c392add2be7ddfef5743',1,'cus_strlen(const char *str):&#160;custom_strings.cpp']]],
+  ['cus_5fstrncat_17',['cus_strncat',['../custom__strings_8cpp.html#a9632e0577c72d46127dad06ac37c4dea',1,'cus_strncat(char *dest, const char *src, size_t cnt):&#160;custom_strings.cpp'],['../custom__strings_8h.html#a9632e0577c72d46127dad06ac37c4dea',1,'cus_strncat(char *dest, const char *src, size_t cnt):&#160;custom_strings.cpp']]],
+  ['cus_5fstrncpy_18',['cus_strncpy',['../custom__strings_8cpp.html#af48a1faaeae83000c6d9fac9b6b31377',1,'cus_strncpy(char *dest, const char *src, size_t cnt):&#160;custom_strings.cpp'],['../custom__strings_8h.html#af48a1faaeae83000c6d9fac9b6b31377',1,'cus_strncpy(char *dest, const char *src, size_t cnt):&#160;custom_strings.cpp']]],
+  ['custom_20stdio_2eh_20and_20string_2eh_20functions_20implementation_19',['Custom stdio.h and string.h functions implementation',['../index.html',1,'']]],
+  ['custom_5fstrings_2ecpp_20',['custom_strings.cpp',['../custom__strings_8cpp.html',1,'']]],
+  ['custom_5fstrings_2eh_21',['custom_strings.h',['../custom__strings_8h.html',1,'']]]
+];

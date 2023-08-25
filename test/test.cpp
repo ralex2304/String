@@ -7,18 +7,18 @@ void test_all() {
     for (int i = 0; i < 9; i++) {
         test_num++;
         if (test_cus_strchr("12345678", '0' + i) == TestResult::PASSED) {
-            printf(CONSOLE_GREEN("Test %d passed!\n"), test_num);
+            printf(CONSOLE_GREEN("Test %u passed!\n"), test_num);
             test_success_num++;
         } else {
-            printf(CONSOLE_RED("Test %d failed.\n"), test_num);
+            printf(CONSOLE_RED("Test %u failed.\n"), test_num);
         }
     }
     test_num++;
     if (test_cus_strchr("12345678", '\0') == TestResult::PASSED) {
-        printf(CONSOLE_GREEN("Test %d passed!\n"), test_num);
+        printf(CONSOLE_GREEN("Test %u passed!\n"), test_num);
         test_success_num++;
     } else {
-        printf(CONSOLE_RED("Test %d failed.\n"), test_num);
+        printf(CONSOLE_RED("Test %u failed.\n"), test_num);
     }
 
 
@@ -26,10 +26,10 @@ void test_all() {
     for (int i = 0; i < 10; i++) {
         test_num++;
         if (test_cus_strlen(buf + i) == TestResult::PASSED) {
-            printf(CONSOLE_GREEN("Test %d passed!\n"), test_num);
+            printf(CONSOLE_GREEN("Test %u passed!\n"), test_num);
             test_success_num++;
         } else {
-            printf(CONSOLE_RED("Test %d failed.\n"), test_num);
+            printf(CONSOLE_RED("Test %u failed.\n"), test_num);
         }
     }
 
@@ -37,20 +37,20 @@ void test_all() {
     for (int i = 0; i < 10; i++) {
         test_num++;
         if (test_cus_strcpy(buf + i) == TestResult::PASSED) {
-            printf(CONSOLE_GREEN("Test %d passed!\n"), test_num);
+            printf(CONSOLE_GREEN("Test %u passed!\n"), test_num);
             test_success_num++;
         } else {
-            printf(CONSOLE_RED("Test %d failed.\n"), test_num);
+            printf(CONSOLE_RED("Test %u failed.\n"), test_num);
         }
     }
 
     for (int i = 0; i < 10; i++) {
         test_num++;
         if (test_cus_strncpy("12345678", i) == TestResult::PASSED) {
-            printf(CONSOLE_GREEN("Test %d passed!\n"), test_num);
+            printf(CONSOLE_GREEN("Test %u passed!\n"), test_num);
             test_success_num++;
         } else {
-            printf(CONSOLE_RED("Test %d failed.\n"), test_num);
+            printf(CONSOLE_RED("Test %u failed.\n"), test_num);
         }
     }
 
@@ -58,25 +58,25 @@ void test_all() {
     for (int i = 0; i < 10; i++) {
         test_num++;
         if (test_cus_strcat(buf + i) == TestResult::PASSED) {
-            printf(CONSOLE_GREEN("Test %d passed!\n"), test_num);
+            printf(CONSOLE_GREEN("Test %u passed!\n"), test_num);
             test_success_num++;
         } else {
-            printf(CONSOLE_RED("Test %d failed.\n"), test_num);
+            printf(CONSOLE_RED("Test %u failed.\n"), test_num);
         }
     }
 
     for (int i = 0; i < 10; i++) {
         test_num++;
         if (test_cus_strncat("12345678", i) == TestResult::PASSED) {
-            printf(CONSOLE_GREEN("Test %d passed!\n"), test_num);
+            printf(CONSOLE_GREEN("Test %u passed!\n"), test_num);
             test_success_num++;
         } else {
-            printf(CONSOLE_RED("Test %d failed.\n"), test_num);
+            printf(CONSOLE_RED("Test %u failed.\n"), test_num);
         }
     }
 
     if (test_num == test_success_num) {
-        printf(CONSOLE_GREEN("All %ld tests passed\n"), test_success_num);
+        printf(CONSOLE_GREEN("All %u tests passed\n"), test_success_num);
     }
 
 
