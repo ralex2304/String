@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Strings", "index.html", [
+  [ "String", "index.html", [
     [ "Custom stdio.h and string.h functions implementation", "index.html", null ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],

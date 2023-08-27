@@ -3,6 +3,10 @@
 
 #include <stdio.h>
 #include <assert.h>
+#include <string.h>
+
+#include "hash.h"
+
 
 /**
  * @brief Puts string str to standart output. \\0 => \\n
@@ -104,5 +108,56 @@ ssize_t cus_getline(char** str, size_t* cnt, FILE* stream);
  * @return false if realloc failed
  */
 bool geom_realloc(char** str, size_t* n);
+
+/**
+ * @brief Finds first inclusion of substr in str and returns its pointer
+ * Simple algorithm O(n * m)
+ *
+ * @param str
+ * @param substr
+ * @return char*
+ */
+char* cus_strstr_simple(const char* str, const char* substr);
+
+/**
+ * @brief Finds first inclusion of substr in str and returns its pointer
+ * Knutt Morris Pratt algorithm O(n + m)
+ *
+ * @param str
+ * @param substr
+ * @return char*
+ */
+char* cus_strstr_kmp(const char* str, const char* substr);
+/**
+ * @brief Returns pointer by index for emulation of concatination of prefix + empty (1 char) + str
+ *
+ * @param i
+ * @param prefix
+ * @param str
+ * @param prefix_len
+ * @param empty
+ * @return const char*
+ */
+const char* ptr_emulate(size_t i, const char* prefix, const char* str, size_t prefix_len, const char* empty);
+
+/**
+ * @brief Finds first inclusion of substr in str and returns its pointer
+ * Boyer Moore algorithm. O(n / m) - O(n * m)
+ *
+ * @param str
+ * @param substr
+ * @return char*
+ */
+char* cus_strstr_bm(const char* str, const char* substr);
+
+/**
+ * @brief Finds first inclusion of substr in str and returns its pointer
+ * Reversed polinomial hash algorithm O(n + m)
+ *
+ * @param str
+ * @param substr
+ * @return char*
+ */
+char* cus_strstr_hash(const char* str, const char* substr);
 
 #endif // #ifndef CUSTOM_STRINGS_H_
