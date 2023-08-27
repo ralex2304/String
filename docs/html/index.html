@@ -92,7 +92,37 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Custom stdio.h and string.h functions implementation </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a> MIPT summer school task </p>
+<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a> </p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Features</h1>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Functions</h2>
+<p>Prefix <code>cus</code> means "custom"</p>
+<ul>
+<li><code>int <a class="el" href="custom__strings_8cpp.html#a5ea80a5c1a98566aef41fb945acb2358" title="Puts string str to standart output. \0 =&gt; \n.">cus_puts(const char* str)</a></code></li>
+<li><code>char* <a class="el" href="custom__strings_8cpp.html#a51efb571ca0af11131b7701a6e0175fa" title="Finds first positions of symbol in str and returns it&#39;s pointer.">cus_strchr(const char* str, const int symbol)</a></code></li>
+<li><code>size_t <a class="el" href="custom__strings_8cpp.html#a0589e4c55ae3c392add2be7ddfef5743" title="Counts str len.">cus_strlen(const char* str)</a></code></li>
+<li><code>char* <a class="el" href="custom__strings_8cpp.html#ad74bfdd7b2e8de96555d5e36276a4dbf" title="Copies src to target.">cus_strcpy(char* dest, const char* src)</a></code></li>
+<li><code>char* <a class="el" href="custom__strings_8cpp.html#af48a1faaeae83000c6d9fac9b6b31377" title="Copies max cnt symbols from src to target.">cus_strncpy(char* dest, const char* src, size_t cnt)</a></code></li>
+<li><code>char* <a class="el" href="custom__strings_8cpp.html#a4087db052ed15acf4cf8a72576970fe9" title="Concatenates src to dest.">cus_strcat(char* dest, const char* src)</a></code></li>
+<li><code>char* <a class="el" href="custom__strings_8cpp.html#a9632e0577c72d46127dad06ac37c4dea" title="Concatenates max cnt symbols from src to dest.">cus_strncat(char* dest, const char* src, size_t cnt)</a></code></li>
+<li><code>char* <a class="el" href="custom__strings_8cpp.html#a95542a6257046526668ce27c3b14fa11" title="Reads max cnt-1 symbols from stream to str.">cus_fgets(char* str, int cnt, FILE* stream)</a></code></li>
+<li><code>char* <a class="el" href="custom__strings_8cpp.html#a8a6f5a4fda330c42fef06c05f9ef532b" title="Allocates memory for str, copies it and returns pointer.">cus_strdup(const char* str)</a></code></li>
+<li><code>ssize_t <a class="el" href="custom__strings_8cpp.html#ac2a89efa37878184384aa458345c2de1" title="Gets line from stream.">cus_getline(char** str, size_t* cnt, FILE* stream)</a></code></li>
+<li><code>strstr() implementations:</code><ul>
+<li><code>char* <a class="el" href="custom__strings_8cpp.html#aee69b897bcfe1cd66b029b24cb34c131" title="Finds first inclusion of substr in str and returns its pointer Simple algorithm O(n * m)">cus_strstr_simple(const char* str, const char* substr)</a></code> - O(n*m) algorithm</li>
+<li><code>char* <a class="el" href="custom__strings_8cpp.html#ade07242f0fb2630420723bb2218a1c48" title="Finds first inclusion of substr in str and returns its pointer Knutt Morris Pratt algorithm O(n + m)">cus_strstr_kmp(const char* str, const char* substr)</a></code> - O(n+m) Knutt Morris Pratt algorithm</li>
+<li><code>char* <a class="el" href="custom__strings_8cpp.html#a480a6478bd53f7ad71774357b17b4b2b" title="Finds first inclusion of substr in str and returns its pointer Boyer Moore algorithm....">cus_strstr_bm(const char* str, const char* substr)</a></code> - O(n/m) - O(n*m) Boyer Moore algorithm</li>
+<li><code>char* <a class="el" href="custom__strings_8cpp.html#a76067ee20b6f4b6a0df1c641e5e32493" title="Finds first inclusion of substr in str and returns its pointer Reversed polinomial hash algorithm O(n...">cus_strstr_hash(const char* str, const char* substr)</a></code> - O(n+m) reversed polynomial hash algorithm</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Tests</h2>
+<p>Most of the functions above have functions with prefix <code>test_</code> for unit tests. cus_strstr() tests are generated recursively.</p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Credits</h1>
+<p>MIPT summer school task </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

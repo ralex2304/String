@@ -10,5 +10,10 @@ var custom__strings_8h =
     [ "cus_strlen", "custom__strings_8h.html#a0589e4c55ae3c392add2be7ddfef5743", null ],
     [ "cus_strncat", "custom__strings_8h.html#a9632e0577c72d46127dad06ac37c4dea", null ],
     [ "cus_strncpy", "custom__strings_8h.html#af48a1faaeae83000c6d9fac9b6b31377", null ],
-    [ "geom_realloc", "custom__strings_8h.html#ae0025497ebfcc58c7d92131c90fff338", null ]
+    [ "cus_strstr_bm", "custom__strings_8h.html#a480a6478bd53f7ad71774357b17b4b2b", null ],
+    [ "cus_strstr_hash", "custom__strings_8h.html#a76067ee20b6f4b6a0df1c641e5e32493", null ],
+    [ "cus_strstr_kmp", "custom__strings_8h.html#ade07242f0fb2630420723bb2218a1c48", null ],
+    [ "cus_strstr_simple", "custom__strings_8h.html#aee69b897bcfe1cd66b029b24cb34c131", null ],
+    [ "geom_realloc", "custom__strings_8h.html#ae0025497ebfcc58c7d92131c90fff338", null ],
+    [ "ptr_emulate", "custom__strings_8h.html#a7f709b490b47e9ae3a69d17578db33c8", null ]
 ];

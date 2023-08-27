@@ -1,0 +1,101 @@
+\doxysection{hash.\+h File Reference}
+\hypertarget{hash_8h}{}\label{hash_8h}\index{hash.h@{hash.h}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_hash}{Hash}}
+\begin{DoxyCompactList}\small\item\em Contains reversed polynomial hash informations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_hash}{Hash}} \mbox{\hyperlink{hash_8h_a1188fe0233347b418ab994f3fd92a4a3}{hash\+\_\+create}} (const char \texorpdfstring{$\ast$}{*}str, size\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em Calculates hash for str. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{hash_8h_a50209db0e12116492b4bae673404a27f}{hash\+\_\+move}} (\mbox{\hyperlink{struct_hash}{Hash}} \texorpdfstring{$\ast$}{*}hash, char remove, char add)
+\begin{DoxyCompactList}\small\item\em Calculates new hash from an old one for substring movement in string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{hash_8h_a1188fe0233347b418ab994f3fd92a4a3}\label{hash_8h_a1188fe0233347b418ab994f3fd92a4a3} 
+\index{hash.h@{hash.h}!hash\_create@{hash\_create}}
+\index{hash\_create@{hash\_create}!hash.h@{hash.h}}
+\doxysubsubsection{\texorpdfstring{hash\_create()}{hash\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_hash}{Hash}} hash\+\_\+create (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+
+
+Calculates hash for str. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & \\
+\hline
+{\em len} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{struct_hash}{Hash} 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{hash_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{hash_8cpp_source}{hash.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00004\ \ \ \ \ \mbox{\hyperlink{struct_hash}{Hash}}\ hash\ =\ \{\};}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ len;\ i++)\ \{}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ hash.\mbox{\hyperlink{struct_hash_a1b1e6900fe4089cd46a4d5d74c776744}{coeff\_pow\_len}}\ =\ hash.\mbox{\hyperlink{struct_hash_a1b1e6900fe4089cd46a4d5d74c776744}{coeff\_pow\_len}}\ *\ hash.\mbox{\hyperlink{struct_hash_a3853b62ab27c14968c370aa3745750c8}{COEFF}}\ \%\ hash.\mbox{\hyperlink{struct_hash_ab5f4bded484af4c757616656b81a2310}{MOD}};}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ hash.\mbox{\hyperlink{struct_hash_a991c35ac9a3e92fb13a5ee7b1dbfd244}{hash}}\ =\ (hash.\mbox{\hyperlink{struct_hash_a991c35ac9a3e92fb13a5ee7b1dbfd244}{hash}}\ *\ hash.\mbox{\hyperlink{struct_hash_a3853b62ab27c14968c370aa3745750c8}{COEFF}}\ +\ str[i])\ \%\ hash.\mbox{\hyperlink{struct_hash_ab5f4bded484af4c757616656b81a2310}{MOD}};}
+\DoxyCodeLine{00008\ \ \ \ \ \}}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordflow}{return}\ hash;}
+\DoxyCodeLine{00010\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{hash_8h_source_l00012}{Hash\+::\+COEFF}}, \mbox{\hyperlink{hash_8h_source_l00015}{Hash\+::coeff\+\_\+pow\+\_\+len}}, \mbox{\hyperlink{hash_8h_source_l00016}{Hash\+::hash}}, and \mbox{\hyperlink{hash_8h_source_l00013}{Hash\+::\+MOD}}.
+
+
+
+Referenced by \mbox{\hyperlink{custom__strings_8cpp_source_l00253}{cus\+\_\+strstr\+\_\+hash()}}.
+
+\Hypertarget{hash_8h_a50209db0e12116492b4bae673404a27f}\label{hash_8h_a50209db0e12116492b4bae673404a27f} 
+\index{hash.h@{hash.h}!hash\_move@{hash\_move}}
+\index{hash\_move@{hash\_move}!hash.h@{hash.h}}
+\doxysubsubsection{\texorpdfstring{hash\_move()}{hash\_move()}}
+{\footnotesize\ttfamily void hash\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_hash}{Hash}} \texorpdfstring{$\ast$}{*}}]{hash,  }\item[{char}]{remove,  }\item[{char}]{add }\end{DoxyParamCaption})}
+
+
+
+Calculates new hash from an old one for substring movement in string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash} & \\
+\hline
+{\em remove} & removed symbol \\
+\hline
+{\em add} & added symbol \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{hash_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{hash_8cpp_source}{hash.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00013\ \ \ \ \ hash-\/>\mbox{\hyperlink{struct_hash_a991c35ac9a3e92fb13a5ee7b1dbfd244}{hash}}\ =\ (hash-\/>\mbox{\hyperlink{struct_hash_a991c35ac9a3e92fb13a5ee7b1dbfd244}{hash}}\ *\ hash-\/>\mbox{\hyperlink{struct_hash_a3853b62ab27c14968c370aa3745750c8}{COEFF}}\ -\/\ hash-\/>\mbox{\hyperlink{struct_hash_a1b1e6900fe4089cd46a4d5d74c776744}{coeff\_pow\_len}}\ *\ remove\ +\ add)\ \%\ hash-\/>\mbox{\hyperlink{struct_hash_ab5f4bded484af4c757616656b81a2310}{MOD}};}
+\DoxyCodeLine{00014\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{hash_8h_source_l00012}{Hash\+::\+COEFF}}, \mbox{\hyperlink{hash_8h_source_l00015}{Hash\+::coeff\+\_\+pow\+\_\+len}}, \mbox{\hyperlink{hash_8h_source_l00016}{Hash\+::hash}}, and \mbox{\hyperlink{hash_8h_source_l00013}{Hash\+::\+MOD}}.
+
+
+
+Referenced by \mbox{\hyperlink{custom__strings_8cpp_source_l00253}{cus\+\_\+strstr\+\_\+hash()}}.
+

@@ -6,31 +6,42 @@
 \DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00003}00003\ }
 \DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
 \DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <assert.h>}}
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00006}00006\ }
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00013}00013\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{custom__strings_8h_a5ea80a5c1a98566aef41fb945acb2358}{cus\_puts}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str);}
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00014}00014\ }
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00022}00022\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_a51efb571ca0af11131b7701a6e0175fa}{cus\_strchr}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ symbol);}
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00023}00023\ }
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00030}00030\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{custom__strings_8h_a0589e4c55ae3c392add2be7ddfef5743}{cus\_strlen}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str);}
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00031}00031\ }
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00039}00039\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_ad74bfdd7b2e8de96555d5e36276a4dbf}{cus\_strcpy}}(\textcolor{keywordtype}{char}*\ dest,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src);}
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00040}00040\ }
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00049}00049\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_af48a1faaeae83000c6d9fac9b6b31377}{cus\_strncpy}}(\textcolor{keywordtype}{char}*\ dest,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src,\ \textcolor{keywordtype}{size\_t}\ cnt);}
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00050}00050\ }
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00058}00058\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_a4087db052ed15acf4cf8a72576970fe9}{cus\_strcat}}(\textcolor{keywordtype}{char}*\ dest,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src);}
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00059}00059\ }
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00068}00068\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_a9632e0577c72d46127dad06ac37c4dea}{cus\_strncat}}(\textcolor{keywordtype}{char}*\ dest,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src,\ \textcolor{keywordtype}{size\_t}\ cnt);}
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00069}00069\ }
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00078}00078\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_a95542a6257046526668ce27c3b14fa11}{cus\_fgets}}(\textcolor{keywordtype}{char}*\ str,\ \textcolor{keywordtype}{int}\ cnt,\ FILE*\ stream);}
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00079}00079\ }
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00086}00086\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_a8a6f5a4fda330c42fef06c05f9ef532b}{cus\_strdup}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str);}
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00087}00087\ }
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00096}00096\ ssize\_t\ \mbox{\hyperlink{custom__strings_8h_ac2a89efa37878184384aa458345c2de1}{cus\_getline}}(\textcolor{keywordtype}{char}**\ str,\ \textcolor{keywordtype}{size\_t}*\ cnt,\ FILE*\ stream);}
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00097}00097\ }
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00106}00106\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{custom__strings_8h_ae0025497ebfcc58c7d92131c90fff338}{geom\_realloc}}(\textcolor{keywordtype}{char}**\ str,\ \textcolor{keywordtype}{size\_t}*\ n);}
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00107}00107\ }
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00108}00108\ \textcolor{comment}{//char*\ cus\_strstr(const\ char*\ str,\ const\ char*\ substr);}}
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00109}00109\ }
-\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00110}00110\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \#ifndef\ CUSTOM\_STRINGS\_H\_}}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{hash_8h}{hash.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00017}00017\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{custom__strings_8h_a5ea80a5c1a98566aef41fb945acb2358}{cus\_puts}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00026}00026\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_a51efb571ca0af11131b7701a6e0175fa}{cus\_strchr}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ symbol);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00034}00034\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{custom__strings_8h_a0589e4c55ae3c392add2be7ddfef5743}{cus\_strlen}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00043}00043\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_ad74bfdd7b2e8de96555d5e36276a4dbf}{cus\_strcpy}}(\textcolor{keywordtype}{char}*\ dest,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00053}00053\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_af48a1faaeae83000c6d9fac9b6b31377}{cus\_strncpy}}(\textcolor{keywordtype}{char}*\ dest,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src,\ \textcolor{keywordtype}{size\_t}\ cnt);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00062}00062\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_a4087db052ed15acf4cf8a72576970fe9}{cus\_strcat}}(\textcolor{keywordtype}{char}*\ dest,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00072}00072\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_a9632e0577c72d46127dad06ac37c4dea}{cus\_strncat}}(\textcolor{keywordtype}{char}*\ dest,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src,\ \textcolor{keywordtype}{size\_t}\ cnt);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00082}00082\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_a95542a6257046526668ce27c3b14fa11}{cus\_fgets}}(\textcolor{keywordtype}{char}*\ str,\ \textcolor{keywordtype}{int}\ cnt,\ FILE*\ stream);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00090}00090\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_a8a6f5a4fda330c42fef06c05f9ef532b}{cus\_strdup}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00100}00100\ ssize\_t\ \mbox{\hyperlink{custom__strings_8h_ac2a89efa37878184384aa458345c2de1}{cus\_getline}}(\textcolor{keywordtype}{char}**\ str,\ \textcolor{keywordtype}{size\_t}*\ cnt,\ FILE*\ stream);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00110}00110\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{custom__strings_8h_ae0025497ebfcc58c7d92131c90fff338}{geom\_realloc}}(\textcolor{keywordtype}{char}**\ str,\ \textcolor{keywordtype}{size\_t}*\ n);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00120}00120\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_aee69b897bcfe1cd66b029b24cb34c131}{cus\_strstr\_simple}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ substr);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00130}00130\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_ade07242f0fb2630420723bb2218a1c48}{cus\_strstr\_kmp}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ substr);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00141}00141\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_a7f709b490b47e9ae3a69d17578db33c8}{ptr\_emulate}}(\textcolor{keywordtype}{size\_t}\ i,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ prefix,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str,\ \textcolor{keywordtype}{size\_t}\ prefix\_len,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ empty);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00142}00142\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00151}00151\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_a480a6478bd53f7ad71774357b17b4b2b}{cus\_strstr\_bm}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ substr);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00152}00152\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00161}00161\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{custom__strings_8h_a76067ee20b6f4b6a0df1c641e5e32493}{cus\_strstr\_hash}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ substr);}
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00162}00162\ }
+\DoxyCodeLine{\Hypertarget{custom__strings_8h_source_l00163}00163\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \#ifndef\ CUSTOM\_STRINGS\_H\_}}
 
 \end{DoxyCode}

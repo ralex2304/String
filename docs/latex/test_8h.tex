@@ -19,6 +19,8 @@ enum class \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093}{Test\+Res
 \item 
 void \mbox{\hyperlink{test_8h_aa1c715cac916839a95e25b65b4071c4a}{test\+\_\+all}} ()
 \begin{DoxyCompactList}\small\item\em Tests all. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test_8h_afd1ef3552077c0ede92fc3d8e6f1e9ec}{print\+\_\+section\+\_\+test\+\_\+results}} (unsigned int test\+\_\+num, unsigned int test\+\_\+success\+\_\+num)
+\begin{DoxyCompactList}\small\item\em Prints test results of section. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093}{Test\+Result}} \mbox{\hyperlink{test_8h_aae272c12c483cb892cf0c628b648a2b8}{test\+\_\+cus\+\_\+strchr}} (const char \texorpdfstring{$\ast$}{*}str, const int symbol)
 \begin{DoxyCompactList}\small\item\em Tests \doxylink{custom__strings_8cpp_a51efb571ca0af11131b7701a6e0175fa}{cus\+\_\+strchr()} \end{DoxyCompactList}\item 
 \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093}{Test\+Result}} \mbox{\hyperlink{test_8h_a312a655bb1d41118d9460c9ecdab2891}{test\+\_\+cus\+\_\+strlen}} (const char \texorpdfstring{$\ast$}{*}str)
@@ -30,7 +32,11 @@ void \mbox{\hyperlink{test_8h_aa1c715cac916839a95e25b65b4071c4a}{test\+\_\+all}}
 \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093}{Test\+Result}} \mbox{\hyperlink{test_8h_af6cadcbc61d00c48bbf2b1731871604f}{test\+\_\+cus\+\_\+strcat}} (const char \texorpdfstring{$\ast$}{*}src)
 \begin{DoxyCompactList}\small\item\em Tests \doxylink{custom__strings_8cpp_a4087db052ed15acf4cf8a72576970fe9}{cus\+\_\+strcat()} \end{DoxyCompactList}\item 
 \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093}{Test\+Result}} \mbox{\hyperlink{test_8h_a704813e0c5d227460810a02a50c26cb0}{test\+\_\+cus\+\_\+strncat}} (const char \texorpdfstring{$\ast$}{*}src, size\+\_\+t cnt)
-\begin{DoxyCompactList}\small\item\em Tests cus\+\_\+strncat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Tests cus\+\_\+strncat. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093}{Test\+Result}} \mbox{\hyperlink{test_8h_a6b78afeac62cf78d806afa75e27b23e8}{test\+\_\+cus\+\_\+strstr}} (const char \texorpdfstring{$\ast$}{*}str, const char \texorpdfstring{$\ast$}{*}substr, char \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*}test\+\_\+func)(const char \texorpdfstring{$\ast$}{*}str, const char \texorpdfstring{$\ast$}{*}substr))
+\begin{DoxyCompactList}\small\item\em Tests cus\+\_\+strstr. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test_8h_a04cb8cda741dfbca7b7d7fb96f4ae036}{bruteforce\+\_\+char}} (char \texorpdfstring{$\ast$}{*}str1, size\+\_\+t depth1, char \texorpdfstring{$\ast$}{*}str2, size\+\_\+t depth2, unsigned int \texorpdfstring{$\ast$}{*}test\+\_\+num, unsigned int \texorpdfstring{$\ast$}{*}test\+\_\+success\+\_\+num, char \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*}test\+\_\+func)(const char \texorpdfstring{$\ast$}{*}str, const char \texorpdfstring{$\ast$}{*}substr))
+\begin{DoxyCompactList}\small\item\em Recursively generates 2 strings. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Enumeration Type Documentation}
@@ -74,6 +80,112 @@ Definition at line \mbox{\hyperlink{test_8h_source_l00015}{15}} of file \mbox{\h
 
 
 \doxysubsection{Function Documentation}
+\Hypertarget{test_8h_a04cb8cda741dfbca7b7d7fb96f4ae036}\label{test_8h_a04cb8cda741dfbca7b7d7fb96f4ae036} 
+\index{test.h@{test.h}!bruteforce\_char@{bruteforce\_char}}
+\index{bruteforce\_char@{bruteforce\_char}!test.h@{test.h}}
+\doxysubsubsection{\texorpdfstring{bruteforce\_char()}{bruteforce\_char()}}
+{\footnotesize\ttfamily void bruteforce\+\_\+char (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str1,  }\item[{size\+\_\+t}]{depth1,  }\item[{char \texorpdfstring{$\ast$}{*}}]{str2,  }\item[{size\+\_\+t}]{depth2,  }\item[{unsigned int \texorpdfstring{$\ast$}{*}}]{test\+\_\+num,  }\item[{unsigned int \texorpdfstring{$\ast$}{*}}]{test\+\_\+success\+\_\+num,  }\item[{char \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*})(const char \texorpdfstring{$\ast$}{*}str, const char \texorpdfstring{$\ast$}{*}substr)}]{test\+\_\+func }\end{DoxyParamCaption})}
+
+
+
+Recursively generates 2 strings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str1} & pointer to first string buffer \\
+\hline
+{\em depth1} & length of str1 \\
+\hline
+{\em str2} & pointer to second string buffer \\
+\hline
+{\em depth2} & length of str2 \\
+\hline
+{\em test\+\_\+num} & pointer \\
+\hline
+{\em test\+\_\+success\+\_\+num} & pointer \\
+\hline
+{\em test\+\_\+func} & pointer to the funstion that is being tested \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00307}{307}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00309\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00310\ \ \ \ \ \textcolor{keywordflow}{if}\ (depth1\ ==\ 0\ \&\&\ depth2\ ==\ 0)\ \{}
+\DoxyCodeLine{00311\ \ \ \ \ \ \ \ \ (*test\_num)++;}
+\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{test_8cpp_a6b78afeac62cf78d806afa75e27b23e8}{test\_cus\_strstr}}(str1,\ str2,\ test\_func)\ ==\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}})\ \{}
+\DoxyCodeLine{00313\ \ \ \ \ \ \ \ \ \ \ \ \ (*test\_success\_num)++;}
+\DoxyCodeLine{00314\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00315\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_ad220b7c98ce4bd06bf25860ca62d7aba}{CONSOLE\_RED}}(\textcolor{stringliteral}{"{}Test\ \%u\ failed.\(\backslash\)n"{}}),\ *test\_num);}
+\DoxyCodeLine{00316\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00317\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00318\ \ \ \ \ \}}
+\DoxyCodeLine{00319\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (depth1\ ==\ 0)\ \{}
+\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ depth2-\/-\/;}
+\DoxyCodeLine{00321\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ 3;\ i++)\ \{}
+\DoxyCodeLine{00322\ \ \ \ \ \ \ \ \ \ \ \ \ str2[depth2]\ =\ \textcolor{charliteral}{'a'}\ +\ (char)i;}
+\DoxyCodeLine{00323\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{test_8cpp_a04cb8cda741dfbca7b7d7fb96f4ae036}{bruteforce\_char}}(str1,\ depth1,\ str2,\ depth2,\ test\_num,\ test\_success\_num,\ test\_func);}
+\DoxyCodeLine{00324\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00325\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00326\ \ \ \ \ \}}
+\DoxyCodeLine{00327\ \ \ \ \ depth1-\/-\/;}
+\DoxyCodeLine{00328\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ 3;\ i++)\ \{}
+\DoxyCodeLine{00329\ \ \ \ \ \ \ \ \ str1[depth1]\ =\ \textcolor{charliteral}{'a'}\ +\ (char)i;}
+\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{test_8cpp_a04cb8cda741dfbca7b7d7fb96f4ae036}{bruteforce\_char}}(str1,\ depth1,\ str2,\ depth2,\ test\_num,\ test\_success\_num,\ test\_func);}
+\DoxyCodeLine{00331\ \ \ \ \ \}}
+\DoxyCodeLine{00332\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{test_8cpp_source_l00307}{bruteforce\+\_\+char()}}, \mbox{\hyperlink{console_8h_source_l00033}{CONSOLE\+\_\+\+RED}}, \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{PASSED}}, and \mbox{\hyperlink{test_8cpp_source_l00288}{test\+\_\+cus\+\_\+strstr()}}.
+
+
+
+Referenced by \mbox{\hyperlink{test_8cpp_source_l00307}{bruteforce\+\_\+char()}}, and \mbox{\hyperlink{test_8cpp_source_l00003}{test\+\_\+all()}}.
+
+\Hypertarget{test_8h_afd1ef3552077c0ede92fc3d8e6f1e9ec}\label{test_8h_afd1ef3552077c0ede92fc3d8e6f1e9ec} 
+\index{test.h@{test.h}!print\_section\_test\_results@{print\_section\_test\_results}}
+\index{print\_section\_test\_results@{print\_section\_test\_results}!test.h@{test.h}}
+\doxysubsubsection{\texorpdfstring{print\_section\_test\_results()}{print\_section\_test\_results()}}
+{\footnotesize\ttfamily void print\+\_\+section\+\_\+test\+\_\+results (\begin{DoxyParamCaption}\item[{unsigned int}]{test\+\_\+num,  }\item[{unsigned int}]{test\+\_\+success\+\_\+num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Prints test results of section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+\_\+num} & \\
+\hline
+{\em test\+\_\+success\+\_\+num} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{test_8h_source_l00032}{32}} of file \mbox{\hyperlink{test_8h_source}{test.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordflow}{if}\ (test\_num\ ==\ test\_success\_num)}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_a3d65c0a458538bfc412e586e89dbf130}{CONSOLE\_GREEN}}(\textcolor{stringliteral}{"{}All\ \%d\ tests\ of\ this\ section\ passed!\(\backslash\)n"{}}),\ test\_num);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_ad220b7c98ce4bd06bf25860ca62d7aba}{CONSOLE\_RED}}(\textcolor{stringliteral}{"{}\%u\ of\ \%u\ tests\ of\ this\ section\ failed!\(\backslash\)n"{}}),\ test\_num\ -\/\ test\_success\_num,\ test\_num);}
+\DoxyCodeLine{00037\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{console_8h_source_l00034}{CONSOLE\+\_\+\+GREEN}}, and \mbox{\hyperlink{console_8h_source_l00033}{CONSOLE\+\_\+\+RED}}.
+
+
+
+Referenced by \mbox{\hyperlink{test_8cpp_source_l00003}{test\+\_\+all()}}.
+
 \Hypertarget{test_8h_aa1c715cac916839a95e25b65b4071c4a}\label{test_8h_aa1c715cac916839a95e25b65b4071c4a} 
 \index{test.h@{test.h}!test\_all@{test\_all}}
 \index{test\_all@{test\_all}!test.h@{test.h}}
@@ -94,88 +206,133 @@ Definition at line \mbox{\hyperlink{test_8cpp_source_l00003}{3}} of file \mbox{\
 \DoxyCodeLine{00004\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ test\_num\ =\ 0;}
 \DoxyCodeLine{00005\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ test\_success\_num\ =\ 0;}
 \DoxyCodeLine{00006\ }
-\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 9;\ i++)\ \{}
-\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ test\_num++;}
-\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{test_8cpp_aae272c12c483cb892cf0c628b648a2b8}{test\_cus\_strchr}}(\textcolor{stringliteral}{"{}12345678"{}},\ \textcolor{charliteral}{'0'}\ +\ i)\ ==\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}})\ \{}
-\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_a3d65c0a458538bfc412e586e89dbf130}{CONSOLE\_GREEN}}(\textcolor{stringliteral}{"{}Test\ \%u\ passed!\(\backslash\)n"{}}),\ test\_num);}
-\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \ \ \ \ test\_success\_num++;}
-\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_ad220b7c98ce4bd06bf25860ca62d7aba}{CONSOLE\_RED}}(\textcolor{stringliteral}{"{}Test\ \%u\ failed.\(\backslash\)n"{}}),\ test\_num);}
-\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00015\ \ \ \ \ \}}
-\DoxyCodeLine{00016\ \ \ \ \ test\_num++;}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{test_8cpp_aae272c12c483cb892cf0c628b648a2b8}{test\_cus\_strchr}}(\textcolor{stringliteral}{"{}12345678"{}},\ \textcolor{charliteral}{'\(\backslash\)0'})\ ==\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}})\ \{}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_a3d65c0a458538bfc412e586e89dbf130}{CONSOLE\_GREEN}}(\textcolor{stringliteral}{"{}Test\ \%u\ passed!\(\backslash\)n"{}}),\ test\_num);}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ test\_success\_num++;}
-\DoxyCodeLine{00020\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_ad220b7c98ce4bd06bf25860ca62d7aba}{CONSOLE\_RED}}(\textcolor{stringliteral}{"{}Test\ \%u\ failed.\(\backslash\)n"{}}),\ test\_num);}
-\DoxyCodeLine{00022\ \ \ \ \ \}}
-\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{comment}{//\ test\_cus\_strchr}}
+\DoxyCodeLine{00008\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Testing\ cus\_strchr\(\backslash\)n"{}});}
+\DoxyCodeLine{00009\ \ \ \ \ test\_num\ =\ 0;}
+\DoxyCodeLine{00010\ \ \ \ \ test\_success\_num\ =\ 0;}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 9;\ i++)\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ test\_num++;}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{test_8cpp_aae272c12c483cb892cf0c628b648a2b8}{test\_cus\_strchr}}(\textcolor{stringliteral}{"{}12345678"{}},\ \textcolor{charliteral}{'0'}\ +\ i)\ ==\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}})}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ test\_success\_num++;}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_ad220b7c98ce4bd06bf25860ca62d7aba}{CONSOLE\_RED}}(\textcolor{stringliteral}{"{}Test\ \%u\ failed.\(\backslash\)n"{}}),\ test\_num);}
+\DoxyCodeLine{00017\ \ \ \ \ \}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ test\_num++;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{test_8cpp_aae272c12c483cb892cf0c628b648a2b8}{test\_cus\_strchr}}(\textcolor{stringliteral}{"{}12345678"{}},\ \textcolor{charliteral}{'\(\backslash\)0'})\ ==\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}})}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ test\_success\_num++;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_ad220b7c98ce4bd06bf25860ca62d7aba}{CONSOLE\_RED}}(\textcolor{stringliteral}{"{}Test\ \%u\ failed.\(\backslash\)n"{}}),\ test\_num);}
 \DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ buf\ =\ \textcolor{stringliteral}{"{}123456789"{}};}
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 10;\ i++)\ \{}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ test\_num++;}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{test_8cpp_a312a655bb1d41118d9460c9ecdab2891}{test\_cus\_strlen}}(buf\ +\ i)\ ==\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}})\ \{}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_a3d65c0a458538bfc412e586e89dbf130}{CONSOLE\_GREEN}}(\textcolor{stringliteral}{"{}Test\ \%u\ passed!\(\backslash\)n"{}}),\ test\_num);}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ test\_success\_num++;}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_ad220b7c98ce4bd06bf25860ca62d7aba}{CONSOLE\_RED}}(\textcolor{stringliteral}{"{}Test\ \%u\ failed.\(\backslash\)n"{}}),\ test\_num);}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00034\ \ \ \ \ \}}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \ \ \ \ buf\ =\ \textcolor{stringliteral}{"{}123456789"{}};}
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 10;\ i++)\ \{}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ test\_num++;}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{test_8cpp_a7cdda967cf9203604db6c691dfbe7c2d}{test\_cus\_strcpy}}(buf\ +\ i)\ ==\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}})\ \{}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_a3d65c0a458538bfc412e586e89dbf130}{CONSOLE\_GREEN}}(\textcolor{stringliteral}{"{}Test\ \%u\ passed!\(\backslash\)n"{}}),\ test\_num);}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ test\_success\_num++;}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_ad220b7c98ce4bd06bf25860ca62d7aba}{CONSOLE\_RED}}(\textcolor{stringliteral}{"{}Test\ \%u\ failed.\(\backslash\)n"{}}),\ test\_num);}
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00045\ \ \ \ \ \}}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 10;\ i++)\ \{}
-\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ test\_num++;}
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{test_8cpp_afc0a6a52f4b94f490c9768ca7cd8a14b}{test\_cus\_strncpy}}(\textcolor{stringliteral}{"{}12345678"{}},\ i)\ ==\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}})\ \{}
-\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_a3d65c0a458538bfc412e586e89dbf130}{CONSOLE\_GREEN}}(\textcolor{stringliteral}{"{}Test\ \%u\ passed!\(\backslash\)n"{}}),\ test\_num);}
-\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ test\_success\_num++;}
-\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_ad220b7c98ce4bd06bf25860ca62d7aba}{CONSOLE\_RED}}(\textcolor{stringliteral}{"{}Test\ \%u\ failed.\(\backslash\)n"{}}),\ test\_num);}
-\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00055\ \ \ \ \ \}}
-\DoxyCodeLine{00056\ }
-\DoxyCodeLine{00057\ \ \ \ \ buf\ =\ \textcolor{stringliteral}{"{}123456789"{}};}
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 10;\ i++)\ \{}
-\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ test\_num++;}
-\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{test_8cpp_af6cadcbc61d00c48bbf2b1731871604f}{test\_cus\_strcat}}(buf\ +\ i)\ ==\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}})\ \{}
-\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_a3d65c0a458538bfc412e586e89dbf130}{CONSOLE\_GREEN}}(\textcolor{stringliteral}{"{}Test\ \%u\ passed!\(\backslash\)n"{}}),\ test\_num);}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{test_8h_afd1ef3552077c0ede92fc3d8e6f1e9ec}{print\_section\_test\_results}}(test\_num,\ test\_success\_num);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ test\_cus\_strlen}}
+\DoxyCodeLine{00028\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Testing\ cus\_strlen\(\backslash\)n"{}});}
+\DoxyCodeLine{00029\ \ \ \ \ test\_num\ =\ 0;}
+\DoxyCodeLine{00030\ \ \ \ \ test\_success\_num\ =\ 0;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ buf\ =\ \textcolor{stringliteral}{"{}123456789"{}};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 10;\ i++)\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ test\_num++;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{test_8cpp_a312a655bb1d41118d9460c9ecdab2891}{test\_cus\_strlen}}(buf\ +\ i)\ ==\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}})}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ test\_success\_num++;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_ad220b7c98ce4bd06bf25860ca62d7aba}{CONSOLE\_RED}}(\textcolor{stringliteral}{"{}Test\ \%u\ failed.\(\backslash\)n"{}}),\ test\_num);}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{test_8h_afd1ef3552077c0ede92fc3d8e6f1e9ec}{print\_section\_test\_results}}(test\_num,\ test\_success\_num);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{//\ test\_cus\_strcpy}}
+\DoxyCodeLine{00042\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Testing\ cus\_strcpy\(\backslash\)n"{}});}
+\DoxyCodeLine{00043\ \ \ \ \ test\_num\ =\ 0;}
+\DoxyCodeLine{00044\ \ \ \ \ test\_success\_num\ =\ 0;}
+\DoxyCodeLine{00045\ \ \ \ \ buf\ =\ \textcolor{stringliteral}{"{}123456789"{}};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 10;\ i++)\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ test\_num++;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{test_8cpp_a7cdda967cf9203604db6c691dfbe7c2d}{test\_cus\_strcpy}}(buf\ +\ i)\ ==\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}})}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ test\_success\_num++;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_ad220b7c98ce4bd06bf25860ca62d7aba}{CONSOLE\_RED}}(\textcolor{stringliteral}{"{}Test\ \%u\ failed.\(\backslash\)n"{}}),\ test\_num);}
+\DoxyCodeLine{00052\ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{test_8h_afd1ef3552077c0ede92fc3d8e6f1e9ec}{print\_section\_test\_results}}(test\_num,\ test\_success\_num);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{//\ test\_cus\_strncpy}}
+\DoxyCodeLine{00056\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Testing\ cus\_strncpy\(\backslash\)n"{}});}
+\DoxyCodeLine{00057\ \ \ \ \ test\_num\ =\ 0;}
+\DoxyCodeLine{00058\ \ \ \ \ test\_success\_num\ =\ 0;}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 10;\ i++)\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ test\_num++;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{test_8cpp_afc0a6a52f4b94f490c9768ca7cd8a14b}{test\_cus\_strncpy}}(\textcolor{stringliteral}{"{}12345678"{}},\ i)\ ==\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}})}
 \DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ test\_success\_num++;}
-\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
 \DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_ad220b7c98ce4bd06bf25860ca62d7aba}{CONSOLE\_RED}}(\textcolor{stringliteral}{"{}Test\ \%u\ failed.\(\backslash\)n"{}}),\ test\_num);}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00066\ \ \ \ \ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \}}
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{test_8h_afd1ef3552077c0ede92fc3d8e6f1e9ec}{print\_section\_test\_results}}(test\_num,\ test\_success\_num);}
 \DoxyCodeLine{00067\ }
-\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 10;\ i++)\ \{}
-\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ test\_num++;}
-\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{test_8cpp_a704813e0c5d227460810a02a50c26cb0}{test\_cus\_strncat}}(\textcolor{stringliteral}{"{}12345678"{}},\ i)\ ==\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}})\ \{}
-\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_a3d65c0a458538bfc412e586e89dbf130}{CONSOLE\_GREEN}}(\textcolor{stringliteral}{"{}Test\ \%u\ passed!\(\backslash\)n"{}}),\ test\_num);}
-\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ test\_success\_num++;}
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_ad220b7c98ce4bd06bf25860ca62d7aba}{CONSOLE\_RED}}(\textcolor{stringliteral}{"{}Test\ \%u\ failed.\(\backslash\)n"{}}),\ test\_num);}
-\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00076\ \ \ \ \ \}}
-\DoxyCodeLine{00077\ }
-\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordflow}{if}\ (test\_num\ ==\ test\_success\_num)\ \{}
-\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_a3d65c0a458538bfc412e586e89dbf130}{CONSOLE\_GREEN}}(\textcolor{stringliteral}{"{}All\ \%u\ tests\ passed\(\backslash\)n"{}}),\ test\_success\_num);}
-\DoxyCodeLine{00080\ \ \ \ \ \}}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{comment}{//\ test\_cus\_strcat}}
+\DoxyCodeLine{00069\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Testing\ cus\_strcat\(\backslash\)n"{}});}
+\DoxyCodeLine{00070\ \ \ \ \ test\_num\ =\ 0;}
+\DoxyCodeLine{00071\ \ \ \ \ test\_success\_num\ =\ 0;}
+\DoxyCodeLine{00072\ \ \ \ \ buf\ =\ \textcolor{stringliteral}{"{}123456789"{}};}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 10;\ i++)\ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ test\_num++;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{test_8cpp_af6cadcbc61d00c48bbf2b1731871604f}{test\_cus\_strcat}}(buf\ +\ i)\ ==\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}})}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ test\_success\_num++;}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_ad220b7c98ce4bd06bf25860ca62d7aba}{CONSOLE\_RED}}(\textcolor{stringliteral}{"{}Test\ \%u\ failed.\(\backslash\)n"{}}),\ test\_num);}
+\DoxyCodeLine{00079\ \ \ \ \ \}}
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{test_8h_afd1ef3552077c0ede92fc3d8e6f1e9ec}{print\_section\_test\_results}}(test\_num,\ test\_success\_num);}
 \DoxyCodeLine{00081\ }
-\DoxyCodeLine{00082\ }
-\DoxyCodeLine{00083\ \}}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{comment}{//\ test\_cus\_strncat}}
+\DoxyCodeLine{00083\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Testing\ cus\_strncat\(\backslash\)n"{}});}
+\DoxyCodeLine{00084\ \ \ \ \ test\_num\ =\ 0;}
+\DoxyCodeLine{00085\ \ \ \ \ test\_success\_num\ =\ 0;}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 10;\ i++)\ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ test\_num++;}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{test_8cpp_a704813e0c5d227460810a02a50c26cb0}{test\_cus\_strncat}}(\textcolor{stringliteral}{"{}12345678"{}},\ i)\ ==\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}})}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ test\_success\_num++;}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\mbox{\hyperlink{console_8h_ad220b7c98ce4bd06bf25860ca62d7aba}{CONSOLE\_RED}}(\textcolor{stringliteral}{"{}Test\ \%u\ failed.\(\backslash\)n"{}}),\ test\_num);}
+\DoxyCodeLine{00092\ \ \ \ \ \}}
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{test_8h_afd1ef3552077c0ede92fc3d8e6f1e9ec}{print\_section\_test\_results}}(test\_num,\ test\_success\_num);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{comment}{//\ test\_cus\_strstr}}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{char}\ str1[11];}
+\DoxyCodeLine{00097\ \ \ \ \ str1[10]\ =\ \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{char}\ str2[5];}
+\DoxyCodeLine{00099\ \ \ \ \ str2[4]\ =\ \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{comment}{//\ test\_cus\_strstr\_simple}}
+\DoxyCodeLine{00102\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Testing\ cus\_strstr\_simple\(\backslash\)n"{}});}
+\DoxyCodeLine{00103\ \ \ \ \ test\_num\ =\ 0;}
+\DoxyCodeLine{00104\ \ \ \ \ test\_success\_num\ =\ 0;}
+\DoxyCodeLine{00105\ \ \ \ \ \mbox{\hyperlink{test_8cpp_a04cb8cda741dfbca7b7d7fb96f4ae036}{bruteforce\_char}}(str1,\ 10,\ str2,\ 4,\ \&test\_num,\ \&test\_success\_num,\ \&\mbox{\hyperlink{custom__strings_8cpp_aee69b897bcfe1cd66b029b24cb34c131}{cus\_strstr\_simple}});}
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{test_8h_afd1ef3552077c0ede92fc3d8e6f1e9ec}{print\_section\_test\_results}}(test\_num,\ test\_success\_num);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{comment}{//\ test\_cus\_strstr\_bm}}
+\DoxyCodeLine{00109\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Testing\ cus\_strstr\_bm\(\backslash\)n"{}});}
+\DoxyCodeLine{00110\ \ \ \ \ test\_num\ =\ 0;}
+\DoxyCodeLine{00111\ \ \ \ \ test\_success\_num\ =\ 0;}
+\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{test_8cpp_a04cb8cda741dfbca7b7d7fb96f4ae036}{bruteforce\_char}}(str1,\ 10,\ str2,\ 4,\ \&test\_num,\ \&test\_success\_num,\ \&\mbox{\hyperlink{custom__strings_8cpp_a480a6478bd53f7ad71774357b17b4b2b}{cus\_strstr\_bm}});}
+\DoxyCodeLine{00113\ \ \ \ \ \mbox{\hyperlink{test_8h_afd1ef3552077c0ede92fc3d8e6f1e9ec}{print\_section\_test\_results}}(test\_num,\ test\_success\_num);}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{comment}{//\ test\_cus\_strstr\_hash}}
+\DoxyCodeLine{00116\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Testing\ cus\_strstr\_hash\(\backslash\)n"{}});}
+\DoxyCodeLine{00117\ \ \ \ \ test\_num\ =\ 0;}
+\DoxyCodeLine{00118\ \ \ \ \ test\_success\_num\ =\ 0;}
+\DoxyCodeLine{00119\ \ \ \ \ \mbox{\hyperlink{test_8cpp_a04cb8cda741dfbca7b7d7fb96f4ae036}{bruteforce\_char}}(str1,\ 10,\ str2,\ 4,\ \&test\_num,\ \&test\_success\_num,\ \&\mbox{\hyperlink{custom__strings_8cpp_a76067ee20b6f4b6a0df1c641e5e32493}{cus\_strstr\_hash}});}
+\DoxyCodeLine{00120\ \ \ \ \ \mbox{\hyperlink{test_8h_afd1ef3552077c0ede92fc3d8e6f1e9ec}{print\_section\_test\_results}}(test\_num,\ test\_success\_num);}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{comment}{//\ test\_cus\_strstr\_kmp}}
+\DoxyCodeLine{00123\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Testing\ cus\_strstr\_kmp\(\backslash\)n"{}});}
+\DoxyCodeLine{00124\ \ \ \ \ test\_num\ =\ 0;}
+\DoxyCodeLine{00125\ \ \ \ \ test\_success\_num\ =\ 0;}
+\DoxyCodeLine{00126\ \ \ \ \ \mbox{\hyperlink{test_8cpp_a04cb8cda741dfbca7b7d7fb96f4ae036}{bruteforce\_char}}(str1,\ 10,\ str2,\ 4,\ \&test\_num,\ \&test\_success\_num,\ \&\mbox{\hyperlink{custom__strings_8cpp_ade07242f0fb2630420723bb2218a1c48}{cus\_strstr\_kmp}});}
+\DoxyCodeLine{00127\ \ \ \ \ \mbox{\hyperlink{test_8h_afd1ef3552077c0ede92fc3d8e6f1e9ec}{print\_section\_test\_results}}(test\_num,\ test\_success\_num);}
+\DoxyCodeLine{00128\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{console_8h_source_l00034}{CONSOLE\+\_\+\+GREEN}}, \mbox{\hyperlink{console_8h_source_l00033}{CONSOLE\+\_\+\+RED}}, \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{PASSED}}, \mbox{\hyperlink{test_8cpp_source_l00185}{test\+\_\+cus\+\_\+strcat()}}, \mbox{\hyperlink{test_8cpp_source_l00085}{test\+\_\+cus\+\_\+strchr()}}, \mbox{\hyperlink{test_8cpp_source_l00127}{test\+\_\+cus\+\_\+strcpy()}}, \mbox{\hyperlink{test_8cpp_source_l00114}{test\+\_\+cus\+\_\+strlen()}}, \mbox{\hyperlink{test_8cpp_source_l00214}{test\+\_\+cus\+\_\+strncat()}}, and \mbox{\hyperlink{test_8cpp_source_l00156}{test\+\_\+cus\+\_\+strncpy()}}.
+References \mbox{\hyperlink{test_8cpp_source_l00307}{bruteforce\+\_\+char()}}, \mbox{\hyperlink{console_8h_source_l00033}{CONSOLE\+\_\+\+RED}}, \mbox{\hyperlink{custom__strings_8cpp_source_l00222}{cus\+\_\+strstr\+\_\+bm()}}, \mbox{\hyperlink{custom__strings_8cpp_source_l00253}{cus\+\_\+strstr\+\_\+hash()}}, \mbox{\hyperlink{custom__strings_8cpp_source_l00184}{cus\+\_\+strstr\+\_\+kmp()}}, \mbox{\hyperlink{custom__strings_8cpp_source_l00153}{cus\+\_\+strstr\+\_\+simple()}}, \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{PASSED}}, \mbox{\hyperlink{test_8h_source_l00032}{print\+\_\+section\+\_\+test\+\_\+results()}}, \mbox{\hyperlink{test_8cpp_source_l00230}{test\+\_\+cus\+\_\+strcat()}}, \mbox{\hyperlink{test_8cpp_source_l00130}{test\+\_\+cus\+\_\+strchr()}}, \mbox{\hyperlink{test_8cpp_source_l00172}{test\+\_\+cus\+\_\+strcpy()}}, \mbox{\hyperlink{test_8cpp_source_l00159}{test\+\_\+cus\+\_\+strlen()}}, \mbox{\hyperlink{test_8cpp_source_l00259}{test\+\_\+cus\+\_\+strncat()}}, and \mbox{\hyperlink{test_8cpp_source_l00201}{test\+\_\+cus\+\_\+strncpy()}}.
 
 
 
@@ -201,43 +358,43 @@ Test\+Result
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{test_8cpp_source_l00185}{185}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00230}{230}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00186\ \ \ \ \ \textcolor{keywordtype}{char}\ buf[1000]\ =\ \textcolor{stringliteral}{"{}123"{}};}
-\DoxyCodeLine{00187\ \ \ \ \ \textcolor{keywordtype}{char}\ buf\_ref[1000]\ =\ \textcolor{stringliteral}{"{}123"{}};}
-\DoxyCodeLine{00188\ }
-\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\_ref\ =\ strcat(buf\_ref,\ src);}
-\DoxyCodeLine{00190\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\ =\ \mbox{\hyperlink{custom__strings_8cpp_a4087db052ed15acf4cf8a72576970fe9}{cus\_strcat}}(buf,\ src);}
-\DoxyCodeLine{00191\ }
-\DoxyCodeLine{00192\ \ \ \ \ \textcolor{keywordflow}{if}\ (result\_ref\ ==\ \textcolor{keyword}{nullptr}\ ||\ result\ ==\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (result\ ==\ result\_ref)}
-\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
-\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
-\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
-\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
-\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
-\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
-\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00202\ \ \ \ \ \}}
-\DoxyCodeLine{00203\ }
-\DoxyCodeLine{00204\ \ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(result,\ result\_ref)\ !=\ 0)\ \{}
-\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
-\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
-\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
-\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
-\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
-\DoxyCodeLine{00210\ \ \ \ \ \}}
-\DoxyCodeLine{00211\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
-\DoxyCodeLine{00212\ \}}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00231\ \ \ \ \ \textcolor{keywordtype}{char}\ buf[1000]\ =\ \textcolor{stringliteral}{"{}123"{}};}
+\DoxyCodeLine{00232\ \ \ \ \ \textcolor{keywordtype}{char}\ buf\_ref[1000]\ =\ \textcolor{stringliteral}{"{}123"{}};}
+\DoxyCodeLine{00233\ }
+\DoxyCodeLine{00234\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\_ref\ =\ strcat(buf\_ref,\ src);}
+\DoxyCodeLine{00235\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\ =\ \mbox{\hyperlink{custom__strings_8cpp_a4087db052ed15acf4cf8a72576970fe9}{cus\_strcat}}(buf,\ src);}
+\DoxyCodeLine{00236\ }
+\DoxyCodeLine{00237\ \ \ \ \ \textcolor{keywordflow}{if}\ (result\_ref\ ==\ \textcolor{keyword}{nullptr}\ ||\ result\ ==\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (result\ ==\ result\_ref)}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00247\ \ \ \ \ \}}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00249\ \ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(result,\ result\_ref)\ !=\ 0)\ \{}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
+\DoxyCodeLine{00255\ \ \ \ \ \}}
+\DoxyCodeLine{00256\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
+\DoxyCodeLine{00257\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{custom__strings_8cpp_source_l00062}{cus\+\_\+strcat()}}, \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{FAILED}}, and \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{PASSED}}.
+References \mbox{\hyperlink{custom__strings_8cpp_source_l00060}{cus\+\_\+strcat()}}, \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{FAILED}}, and \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{PASSED}}.
 
 
 
@@ -267,38 +424,38 @@ Test\+Result
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{test_8cpp_source_l00085}{85}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00130}{130}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00086\ \ \ \ \ assert(str);}
-\DoxyCodeLine{00087\ }
-\DoxyCodeLine{00088\ }
-\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\ =\ \mbox{\hyperlink{custom__strings_8cpp_a51efb571ca0af11131b7701a6e0175fa}{cus\_strchr}}(str,\ symbol);}
-\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\_ref\ =\ strchr(str,\ symbol);}
-\DoxyCodeLine{00091\ }
-\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordflow}{if}\ (result\_ref\ ==\ \textcolor{keyword}{nullptr}\ ||\ result\ ==\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (result\ ==\ result\_ref)}
-\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
-\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
-\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
-\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
-\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
-\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
-\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00102\ \ \ \ \ \}}
-\DoxyCodeLine{00103\ }
-\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(result,\ result\_ref)\ !=\ 0)\ \{}
-\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
-\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
-\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
-\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
-\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
-\DoxyCodeLine{00110\ \ \ \ \ \}}
-\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
-\DoxyCodeLine{00112\ \}}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00131\ \ \ \ \ assert(str);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\ =\ \mbox{\hyperlink{custom__strings_8cpp_a51efb571ca0af11131b7701a6e0175fa}{cus\_strchr}}(str,\ symbol);}
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\_ref\ =\ strchr(str,\ symbol);}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordflow}{if}\ (result\_ref\ ==\ \textcolor{keyword}{nullptr}\ ||\ result\ ==\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (result\ ==\ result\_ref)}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00147\ \ \ \ \ \}}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(result,\ result\_ref)\ !=\ 0)\ \{}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
+\DoxyCodeLine{00155\ \ \ \ \ \}}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
+\DoxyCodeLine{00157\ \}}
 
 \end{DoxyCode}
 
@@ -329,43 +486,43 @@ Test\+Result
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{test_8cpp_source_l00127}{127}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00172}{172}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{char}\ buf[1000]\ =\ \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordtype}{char}\ buf\_ref[1000]\ =\ \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{00130\ }
-\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\_ref\ =\ strcpy(buf\_ref,\ src);}
-\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\ =\ \mbox{\hyperlink{custom__strings_8cpp_ad74bfdd7b2e8de96555d5e36276a4dbf}{cus\_strcpy}}(buf,\ src);}
-\DoxyCodeLine{00133\ }
-\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordflow}{if}\ (result\_ref\ ==\ \textcolor{keyword}{nullptr}\ ||\ result\ ==\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (result\ ==\ result\_ref)}
-\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
-\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
-\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
-\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
-\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
-\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
-\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00144\ \ \ \ \ \}}
-\DoxyCodeLine{00145\ }
-\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(result,\ result\_ref)\ !=\ 0)\ \{}
-\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
-\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
-\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
-\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
-\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
-\DoxyCodeLine{00152\ \ \ \ \ \}}
-\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
-\DoxyCodeLine{00154\ \}}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keywordtype}{char}\ buf[1000]\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordtype}{char}\ buf\_ref[1000]\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\_ref\ =\ strcpy(buf\_ref,\ src);}
+\DoxyCodeLine{00177\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\ =\ \mbox{\hyperlink{custom__strings_8cpp_ad74bfdd7b2e8de96555d5e36276a4dbf}{cus\_strcpy}}(buf,\ src);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordflow}{if}\ (result\_ref\ ==\ \textcolor{keyword}{nullptr}\ ||\ result\ ==\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (result\ ==\ result\_ref)}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00189\ \ \ \ \ \}}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00191\ \ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(result,\ result\_ref)\ !=\ 0)\ \{}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
+\DoxyCodeLine{00197\ \ \ \ \ \}}
+\DoxyCodeLine{00198\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
+\DoxyCodeLine{00199\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{custom__strings_8cpp_source_l00037}{cus\+\_\+strcpy()}}, \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{FAILED}}, and \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{PASSED}}.
+References \mbox{\hyperlink{custom__strings_8cpp_source_l00035}{cus\+\_\+strcpy()}}, \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{FAILED}}, and \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{PASSED}}.
 
 
 
@@ -391,27 +548,27 @@ Test\+Result
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{test_8cpp_source_l00114}{114}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00159}{159}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00115\ \ \ \ \ assert(str);}
-\DoxyCodeLine{00116\ }
-\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ result\_ref\ =\ strlen(str);}
-\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ result\ =\ \mbox{\hyperlink{custom__strings_8cpp_a0589e4c55ae3c392add2be7ddfef5743}{cus\_strlen}}(str);}
-\DoxyCodeLine{00119\ }
-\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordflow}{if}\ (result\ !=\ result\_ref)\ \{}
-\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\ \%lld\ instead\ of\ \%lld\(\backslash\)n"{}},\ result\_ref,\ result);}
-\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
-\DoxyCodeLine{00123\ \ \ \ \ \}}
-\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
-\DoxyCodeLine{00125\ \}}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00160\ \ \ \ \ assert(str);}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ result\_ref\ =\ strlen(str);}
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ result\ =\ \mbox{\hyperlink{custom__strings_8cpp_a0589e4c55ae3c392add2be7ddfef5743}{cus\_strlen}}(str);}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordflow}{if}\ (result\ !=\ result\_ref)\ \{}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\ \%lld\ instead\ of\ \%lld\(\backslash\)n"{}},\ result\_ref,\ result);}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
+\DoxyCodeLine{00168\ \ \ \ \ \}}
+\DoxyCodeLine{00169\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
+\DoxyCodeLine{00170\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{custom__strings_8cpp_source_l00028}{cus\+\_\+strlen()}}, \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{FAILED}}, and \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{PASSED}}.
+References \mbox{\hyperlink{custom__strings_8cpp_source_l00026}{cus\+\_\+strlen()}}, \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{FAILED}}, and \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{PASSED}}.
 
 
 
@@ -439,43 +596,43 @@ Test\+Result
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{test_8cpp_source_l00214}{214}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00259}{259}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keywordtype}{char}\ buf[1000]\ =\ \textcolor{stringliteral}{"{}123"{}};}
-\DoxyCodeLine{00216\ \ \ \ \ \textcolor{keywordtype}{char}\ buf\_ref[1000]\ =\ \textcolor{stringliteral}{"{}123"{}};}
-\DoxyCodeLine{00217\ }
-\DoxyCodeLine{00218\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\_ref\ =\ strncat(buf\_ref,\ src,\ cnt);}
-\DoxyCodeLine{00219\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\ =\ \mbox{\hyperlink{custom__strings_8cpp_a9632e0577c72d46127dad06ac37c4dea}{cus\_strncat}}(buf,\ src,\ cnt);}
-\DoxyCodeLine{00220\ }
-\DoxyCodeLine{00221\ \ \ \ \ \textcolor{keywordflow}{if}\ (result\_ref\ ==\ \textcolor{keyword}{nullptr}\ ||\ result\ ==\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (result\ ==\ result\_ref)}
-\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
-\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
-\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
-\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
-\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
-\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
-\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00231\ \ \ \ \ \}}
-\DoxyCodeLine{00232\ }
-\DoxyCodeLine{00233\ \ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(result,\ result\_ref)\ !=\ 0)\ \{}
-\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
-\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
-\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
-\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
-\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
-\DoxyCodeLine{00239\ \ \ \ \ \}}
-\DoxyCodeLine{00240\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
-\DoxyCodeLine{00241\ \}}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00260\ \ \ \ \ \textcolor{keywordtype}{char}\ buf[1000]\ =\ \textcolor{stringliteral}{"{}123"{}};}
+\DoxyCodeLine{00261\ \ \ \ \ \textcolor{keywordtype}{char}\ buf\_ref[1000]\ =\ \textcolor{stringliteral}{"{}123"{}};}
+\DoxyCodeLine{00262\ }
+\DoxyCodeLine{00263\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\_ref\ =\ strncat(buf\_ref,\ src,\ cnt);}
+\DoxyCodeLine{00264\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\ =\ \mbox{\hyperlink{custom__strings_8cpp_a9632e0577c72d46127dad06ac37c4dea}{cus\_strncat}}(buf,\ src,\ cnt);}
+\DoxyCodeLine{00265\ }
+\DoxyCodeLine{00266\ \ \ \ \ \textcolor{keywordflow}{if}\ (result\_ref\ ==\ \textcolor{keyword}{nullptr}\ ||\ result\ ==\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (result\ ==\ result\_ref)}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
+\DoxyCodeLine{00274\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00276\ \ \ \ \ \}}
+\DoxyCodeLine{00277\ }
+\DoxyCodeLine{00278\ \ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(result,\ result\_ref)\ !=\ 0)\ \{}
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
+\DoxyCodeLine{00284\ \ \ \ \ \}}
+\DoxyCodeLine{00285\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
+\DoxyCodeLine{00286\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{custom__strings_8cpp_source_l00074}{cus\+\_\+strncat()}}, \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{FAILED}}, and \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{PASSED}}.
+References \mbox{\hyperlink{custom__strings_8cpp_source_l00072}{cus\+\_\+strncat()}}, \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{FAILED}}, and \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{PASSED}}.
 
 
 
@@ -503,45 +660,101 @@ Test\+Result
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{test_8cpp_source_l00156}{156}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00201}{201}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{char}\ buf[1000]\ =\ \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordtype}{char}\ buf\_ref[1000]\ =\ \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{00159\ }
-\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\_ref\ =\ strncpy(buf\_ref,\ src,\ cnt);}
-\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\ =\ \mbox{\hyperlink{custom__strings_8cpp_af48a1faaeae83000c6d9fac9b6b31377}{cus\_strncpy}}(buf,\ src,\ cnt);}
-\DoxyCodeLine{00162\ }
-\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordflow}{if}\ (result\_ref\ ==\ \textcolor{keyword}{nullptr}\ ||\ result\ ==\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (result\ ==\ result\_ref)}
-\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
-\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
-\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
-\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
-\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
-\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
-\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00173\ \ \ \ \ \}}
-\DoxyCodeLine{00174\ }
-\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(result,\ result\_ref)\ !=\ 0)\ \{}
-\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
-\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
-\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
-\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
-\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
-\DoxyCodeLine{00181\ \ \ \ \ \}}
-\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
-\DoxyCodeLine{00183\ \}}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keywordtype}{char}\ buf[1000]\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00203\ \ \ \ \ \textcolor{keywordtype}{char}\ buf\_ref[1000]\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\_ref\ =\ strncpy(buf\_ref,\ src,\ cnt);}
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\ =\ \mbox{\hyperlink{custom__strings_8cpp_af48a1faaeae83000c6d9fac9b6b31377}{cus\_strncpy}}(buf,\ src,\ cnt);}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ \ \ \ \ \textcolor{keywordflow}{if}\ (result\_ref\ ==\ \textcolor{keyword}{nullptr}\ ||\ result\ ==\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (result\ ==\ result\_ref)}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00218\ \ \ \ \ \}}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(result,\ result\_ref)\ !=\ 0)\ \{}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
+\DoxyCodeLine{00226\ \ \ \ \ \}}
+\DoxyCodeLine{00227\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
+\DoxyCodeLine{00228\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{custom__strings_8cpp_source_l00049}{cus\+\_\+strncpy()}}, \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{FAILED}}, and \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{PASSED}}.
+References \mbox{\hyperlink{custom__strings_8cpp_source_l00047}{cus\+\_\+strncpy()}}, \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{FAILED}}, and \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{PASSED}}.
 
 
 
 Referenced by \mbox{\hyperlink{test_8cpp_source_l00003}{test\+\_\+all()}}.
+
+\Hypertarget{test_8h_a6b78afeac62cf78d806afa75e27b23e8}\label{test_8h_a6b78afeac62cf78d806afa75e27b23e8} 
+\index{test.h@{test.h}!test\_cus\_strstr@{test\_cus\_strstr}}
+\index{test\_cus\_strstr@{test\_cus\_strstr}!test.h@{test.h}}
+\doxysubsubsection{\texorpdfstring{test\_cus\_strstr()}{test\_cus\_strstr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093}{Test\+Result}} test\+\_\+cus\+\_\+strstr (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{substr,  }\item[{char \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*})(const char \texorpdfstring{$\ast$}{*}str, const char \texorpdfstring{$\ast$}{*}substr)}]{test\+\_\+func }\end{DoxyParamCaption})}
+
+
+
+Tests cus\+\_\+strstr. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & \\
+\hline
+{\em substr} & \\
+\hline
+{\em test\+\_\+func} & pointer to the funstion that is being tested \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Test\+Result 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{test_8cpp_source_l00288}{288}} of file \mbox{\hyperlink{test_8cpp_source}{test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00288\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00289\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\_ref\ =\ strstr(str,\ substr);}
+\DoxyCodeLine{00290\ \ \ \ \ \textcolor{keywordtype}{char}*\ result\ =\ (*test\_func)(str,\ substr);}
+\DoxyCodeLine{00291\ }
+\DoxyCodeLine{00292\ \ \ \ \ \textcolor{keywordflow}{if}\ (result\ ==\ result\_ref)}
+\DoxyCodeLine{00293\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
+\DoxyCodeLine{00294\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00295\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}str:\ \ \ \ \%s\(\backslash\)n"{}},\ str);}
+\DoxyCodeLine{00296\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}substr:\ \%s\(\backslash\)n"{}},\ substr);}
+\DoxyCodeLine{00297\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Must\ be\(\backslash\)n"{}}}
+\DoxyCodeLine{00298\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}}
+\DoxyCodeLine{00299\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}instead\ of\(\backslash\)n"{}}}
+\DoxyCodeLine{00300\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ result\_ref,\ result);}
+\DoxyCodeLine{00301\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{TestResult::FAILED}};}
+\DoxyCodeLine{00302\ \ \ \ \ \}}
+\DoxyCodeLine{00303\ }
+\DoxyCodeLine{00304\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{TestResult::PASSED}};}
+\DoxyCodeLine{00305\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093ab9e14d9b2886bcff408b85aefa780419}{FAILED}}, and \mbox{\hyperlink{test_8h_aae529400284a6182b4bdb3a5596bd093a269f3d1562cbd15624e7d2c4b10122e3}{PASSED}}.
+
+
+
+Referenced by \mbox{\hyperlink{test_8cpp_source_l00307}{bruteforce\+\_\+char()}}.
 

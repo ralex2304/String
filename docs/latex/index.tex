@@ -2,4 +2,29 @@
 \hypertarget{index}{}\label{index}\index{Custom stdio.h and string.h functions implementation@{Custom stdio.h and string.h functions implementation}}
 \label{index_md__r_e_a_d_m_e}%
 \Hypertarget{index_md__r_e_a_d_m_e}%
- MIPT summer school task 
+ \hypertarget{index_autotoc_md1}{}\doxysection{\texorpdfstring{Features}{Features}}\label{index_autotoc_md1}
+\hypertarget{index_autotoc_md2}{}\doxysubsection{\texorpdfstring{Functions}{Functions}}\label{index_autotoc_md2}
+Prefix {\ttfamily cus} means \"{}custom\"{}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily int \doxylink{custom__strings_8cpp_a5ea80a5c1a98566aef41fb945acb2358}{cus\+\_\+puts(const char\texorpdfstring{$\ast$}{*} str)}}
+\item {\ttfamily char\texorpdfstring{$\ast$}{*} \doxylink{custom__strings_8cpp_a51efb571ca0af11131b7701a6e0175fa}{cus\+\_\+strchr(const char\texorpdfstring{$\ast$}{*} str, const int symbol)}}
+\item {\ttfamily size\+\_\+t \doxylink{custom__strings_8cpp_a0589e4c55ae3c392add2be7ddfef5743}{cus\+\_\+strlen(const char\texorpdfstring{$\ast$}{*} str)}}
+\item {\ttfamily char\texorpdfstring{$\ast$}{*} \doxylink{custom__strings_8cpp_ad74bfdd7b2e8de96555d5e36276a4dbf}{cus\+\_\+strcpy(char\texorpdfstring{$\ast$}{*} dest, const char\texorpdfstring{$\ast$}{*} src)}}
+\item {\ttfamily char\texorpdfstring{$\ast$}{*} \doxylink{custom__strings_8cpp_af48a1faaeae83000c6d9fac9b6b31377}{cus\+\_\+strncpy(char\texorpdfstring{$\ast$}{*} dest, const char\texorpdfstring{$\ast$}{*} src, size\+\_\+t cnt)}}
+\item {\ttfamily char\texorpdfstring{$\ast$}{*} \doxylink{custom__strings_8cpp_a4087db052ed15acf4cf8a72576970fe9}{cus\+\_\+strcat(char\texorpdfstring{$\ast$}{*} dest, const char\texorpdfstring{$\ast$}{*} src)}}
+\item {\ttfamily char\texorpdfstring{$\ast$}{*} \doxylink{custom__strings_8cpp_a9632e0577c72d46127dad06ac37c4dea}{cus\+\_\+strncat(char\texorpdfstring{$\ast$}{*} dest, const char\texorpdfstring{$\ast$}{*} src, size\+\_\+t cnt)}}
+\item {\ttfamily char\texorpdfstring{$\ast$}{*} \doxylink{custom__strings_8cpp_a95542a6257046526668ce27c3b14fa11}{cus\+\_\+fgets(char\texorpdfstring{$\ast$}{*} str, int cnt, FILE\texorpdfstring{$\ast$}{*} stream)}}
+\item {\ttfamily char\texorpdfstring{$\ast$}{*} \doxylink{custom__strings_8cpp_a8a6f5a4fda330c42fef06c05f9ef532b}{cus\+\_\+strdup(const char\texorpdfstring{$\ast$}{*} str)}}
+\item {\ttfamily ssize\+\_\+t \doxylink{custom__strings_8cpp_ac2a89efa37878184384aa458345c2de1}{cus\+\_\+getline(char\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} str, size\+\_\+t\texorpdfstring{$\ast$}{*} cnt, FILE\texorpdfstring{$\ast$}{*} stream)}}
+\item {\ttfamily strstr() implementations\+:}
+\begin{DoxyItemize}
+\item {\ttfamily char\texorpdfstring{$\ast$}{*} \doxylink{custom__strings_8cpp_aee69b897bcfe1cd66b029b24cb34c131}{cus\+\_\+strstr\+\_\+simple(const char\texorpdfstring{$\ast$}{*} str, const char\texorpdfstring{$\ast$}{*} substr)}} -\/ O(n\texorpdfstring{$\ast$}{*}m) algorithm
+\item {\ttfamily char\texorpdfstring{$\ast$}{*} \doxylink{custom__strings_8cpp_ade07242f0fb2630420723bb2218a1c48}{cus\+\_\+strstr\+\_\+kmp(const char\texorpdfstring{$\ast$}{*} str, const char\texorpdfstring{$\ast$}{*} substr)}} -\/ O(n+m) Knutt Morris Pratt algorithm
+\item {\ttfamily char\texorpdfstring{$\ast$}{*} \doxylink{custom__strings_8cpp_a480a6478bd53f7ad71774357b17b4b2b}{cus\+\_\+strstr\+\_\+bm(const char\texorpdfstring{$\ast$}{*} str, const char\texorpdfstring{$\ast$}{*} substr)}} -\/ O(n/m) -\/ O(n\texorpdfstring{$\ast$}{*}m) Boyer Moore algorithm
+\item {\ttfamily char\texorpdfstring{$\ast$}{*} \doxylink{custom__strings_8cpp_a76067ee20b6f4b6a0df1c641e5e32493}{cus\+\_\+strstr\+\_\+hash(const char\texorpdfstring{$\ast$}{*} str, const char\texorpdfstring{$\ast$}{*} substr)}} -\/ O(n+m) reversed polynomial hash algorithm
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{index_autotoc_md3}{}\doxysubsection{\texorpdfstring{Tests}{Tests}}\label{index_autotoc_md3}
+Most of the functions above have functions with prefix {\ttfamily test\+\_\+} for unit tests. cus\+\_\+strstr() tests are generated recursively.\hypertarget{index_autotoc_md4}{}\doxysection{\texorpdfstring{Credits}{Credits}}\label{index_autotoc_md4}
+MIPT summer school task 

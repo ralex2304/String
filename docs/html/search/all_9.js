@@ -1,13 +1,11 @@
 var searchData=
 [
-  ['test_2ecpp_0',['test.cpp',['../test_8cpp.html',1,'']]],
-  ['test_2eh_1',['test.h',['../test_8h.html',1,'']]],
-  ['test_5fall_2',['test_all',['../test_8cpp.html#aa1c715cac916839a95e25b65b4071c4a',1,'test_all():&#160;test.cpp'],['../test_8h.html#aa1c715cac916839a95e25b65b4071c4a',1,'test_all():&#160;test.cpp']]],
-  ['test_5fcus_5fstrcat_3',['test_cus_strcat',['../test_8cpp.html#af6cadcbc61d00c48bbf2b1731871604f',1,'test_cus_strcat(const char *src):&#160;test.cpp'],['../test_8h.html#af6cadcbc61d00c48bbf2b1731871604f',1,'test_cus_strcat(const char *src):&#160;test.cpp']]],
-  ['test_5fcus_5fstrchr_4',['test_cus_strchr',['../test_8cpp.html#aae272c12c483cb892cf0c628b648a2b8',1,'test_cus_strchr(const char *str, const int symbol):&#160;test.cpp'],['../test_8h.html#aae272c12c483cb892cf0c628b648a2b8',1,'test_cus_strchr(const char *str, const int symbol):&#160;test.cpp']]],
-  ['test_5fcus_5fstrcpy_5',['test_cus_strcpy',['../test_8cpp.html#a7cdda967cf9203604db6c691dfbe7c2d',1,'test_cus_strcpy(const char *src):&#160;test.cpp'],['../test_8h.html#a7cdda967cf9203604db6c691dfbe7c2d',1,'test_cus_strcpy(const char *src):&#160;test.cpp']]],
-  ['test_5fcus_5fstrlen_6',['test_cus_strlen',['../test_8cpp.html#a312a655bb1d41118d9460c9ecdab2891',1,'test_cus_strlen(const char *str):&#160;test.cpp'],['../test_8h.html#a312a655bb1d41118d9460c9ecdab2891',1,'test_cus_strlen(const char *str):&#160;test.cpp']]],
-  ['test_5fcus_5fstrncat_7',['test_cus_strncat',['../test_8cpp.html#a704813e0c5d227460810a02a50c26cb0',1,'test_cus_strncat(const char *src, size_t cnt):&#160;test.cpp'],['../test_8h.html#a704813e0c5d227460810a02a50c26cb0',1,'test_cus_strncat(const char *src, size_t cnt):&#160;test.cpp']]],
-  ['test_5fcus_5fstrncpy_8',['test_cus_strncpy',['../test_8cpp.html#afc0a6a52f4b94f490c9768ca7cd8a14b',1,'test_cus_strncpy(const char *src, size_t cnt):&#160;test.cpp'],['../test_8h.html#afc0a6a52f4b94f490c9768ca7cd8a14b',1,'test_cus_strncpy(const char *src, size_t cnt):&#160;test.cpp']]],
-  ['testresult_9',['TestResult',['../test_8h.html#aae529400284a6182b4bdb3a5596bd093',1,'test.h']]]
+  ['style_5fblink_5foff_0',['STYLE_BLINK_OFF',['../console_8h.html#a90d5198d0e1fdba8fc116dcafc4a3f55',1,'console.h']]],
+  ['style_5fbold_1',['STYLE_BOLD',['../console_8h.html#a7ce3d6fee94f21c9e3d0ffdd90aadc2e',1,'console.h']]],
+  ['style_5ffaint_2',['STYLE_FAINT',['../console_8h.html#a52bc634953ffb7fb8a57e58aa51f88cd',1,'console.h']]],
+  ['style_5ffast_5fblink_3',['STYLE_FAST_BLINK',['../console_8h.html#aafd75a8728fea5c6148ccf6e4d9a4e4e',1,'console.h']]],
+  ['style_5fitalic_4',['STYLE_ITALIC',['../console_8h.html#aab0b220352da214508a3426e00700d5d',1,'console.h']]],
+  ['style_5freset_5',['STYLE_RESET',['../console_8h.html#a0afe503629a0074b6d24bbce318f85f2',1,'console.h']]],
+  ['style_5fslow_5fblink_6',['STYLE_SLOW_BLINK',['../console_8h.html#a53711348a801f028fe80a96a5401b923',1,'console.h']]],
+  ['style_5funderlined_7',['STYLE_UNDERLINED',['../console_8h.html#a921c029ea8b2b3b621ba2b5d36380489',1,'console.h']]]
 ];
