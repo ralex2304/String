@@ -100,14 +100,15 @@ char* cus_strdup(const char* str);
 ssize_t cus_getline(char** str, size_t* cnt, FILE* stream);
 
 /**
- * @brief Geometric realloc for char*
+ * @brief Geometric realloc
  *
- * @param str
- * @param n
+ * @param mem array pointer
+ * @param elem_size type size
+ * @param size array len
  * @return true if succeed
  * @return false if realloc failed
  */
-bool geom_realloc(char** str, size_t* n);
+bool geom_realloc(void** mem, const size_t elem_size, size_t* size);
 
 /**
  * @brief Finds first inclusion of substr in str and returns its pointer

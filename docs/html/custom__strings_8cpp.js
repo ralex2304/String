@@ -14,6 +14,6 @@ var custom__strings_8cpp =
     [ "cus_strstr_hash", "custom__strings_8cpp.html#a76067ee20b6f4b6a0df1c641e5e32493", null ],
     [ "cus_strstr_kmp", "custom__strings_8cpp.html#ade07242f0fb2630420723bb2218a1c48", null ],
     [ "cus_strstr_simple", "custom__strings_8cpp.html#aee69b897bcfe1cd66b029b24cb34c131", null ],
-    [ "geom_realloc", "custom__strings_8cpp.html#ae0025497ebfcc58c7d92131c90fff338", null ],
+    [ "geom_realloc", "custom__strings_8cpp.html#ada3851931969dc65e9341d7527cd2e19", null ],
     [ "ptr_emulate", "custom__strings_8cpp.html#a7f709b490b47e9ae3a69d17578db33c8", null ]
 ];

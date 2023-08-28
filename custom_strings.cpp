@@ -129,7 +129,7 @@ ssize_t cus_getline(char** str, size_t* cnt, FILE* stream) {
     int c = '\0';
     for (i = 0; c != '\n'; i++) {
         if (i >= *cnt - 1)
-            if (!geom_realloc(str, cnt))
+            if (!geom_realloc((void**)str, sizeof(char), cnt))
                 return -1;
 
         c = fgetc(stream);
@@ -142,10 +142,10 @@ ssize_t cus_getline(char** str, size_t* cnt, FILE* stream) {
     return i;
 }
 
-bool geom_realloc(char** str, size_t* n) {
-    *n *= 2;
-    *str = (char*)realloc(*str, (*n) * sizeof(char));
-    if (*str == nullptr)
+bool geom_realloc(void** mem, size_t elem_size, size_t* size) {
+    *size *= 2;
+    *mem = realloc(*mem, (*size) * elem_size);
+    if (*mem == nullptr)
         return false;
     return true;
 }
@@ -189,11 +189,22 @@ char* cus_strstr_kmp(const char* str, const char* substr) {
 
     size_t str_len = cus_strlen(str);
 
-    size_t* pref = (size_t*)calloc(str_len + substr_len + 1, sizeof(size_t)); ///< prefix function
+    static size_t*  pref = nullptr; ///< prefix function
+    static size_t pref_len = 0;
+
+    if (pref == nullptr) { ///< initial alloc
+        pref_len = str_len + substr_len + 1;
+        pref = (size_t*)calloc(pref_len, sizeof(size_t));
+    } else if (pref_len < str_len + substr_len + 1) { ///< if pref_len is too small
+        pref_len = str_len + substr_len + 1;
+        pref = (size_t*)realloc(pref, pref_len * sizeof(size_t));
+    }
+
     if (pref == nullptr)
         return nullptr;
 
-    for (size_t i = 1; i < str_len + substr_len + 1; i++) {
+    pref[0] = 0;
+    for (size_t i = 1; i < pref_len; i++) {
         size_t j = pref[i - 1];
 
         while ((j > 0) && (*ptr_emulate(i, substr, str, substr_len, "") != *ptr_emulate(j, substr, str, substr_len, "")))
@@ -204,12 +215,10 @@ char* cus_strstr_kmp(const char* str, const char* substr) {
 
         pref[i] = j;
         if (j == substr_len) {
-            free(pref);
             return const_cast<char*>(str) + i - 2 * substr_len;
         }
     }
 
-    free(pref);
     return nullptr;
 }
 
