@@ -49,10 +49,11 @@ char* cus_strncpy(char* dest, const char* src, size_t cnt) {
     assert(src);
 
     size_t i = 0;
-    for (i = 0; src[i] != '\0' && i < cnt; i++) {
+    for (i = 0; src[i] != '\0' && i < cnt; i++)
         dest[i] = src[i];
-    }
-    dest[i] = '\0';
+
+    for (;i < cnt; i++)
+        dest[i] = '\0';
 
     return dest;
 }
@@ -144,9 +145,12 @@ ssize_t cus_getline(char** str, size_t* cnt, FILE* stream) {
 
 bool geom_realloc(void** mem, size_t elem_size, size_t* size) {
     *size *= 2;
+    void* ptr = *mem;
     *mem = realloc(*mem, (*size) * elem_size);
-    if (*mem == nullptr)
+    if (*mem == nullptr) {
+        free(ptr);
         return false;
+    }
     return true;
 }
 
