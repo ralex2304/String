@@ -1,4 +1,5 @@
 #include "custom_strings.h"
+#include <cstdio>
 
 int cus_puts(const char* str) {
     assert(str);
@@ -91,8 +92,11 @@ char* cus_fgets(char* str, int cnt, FILE* stream) {
 
     for (i = 0; i < (size_t)cnt - 1 && c != '\n'; i++) {
         c = getc(stream);
-        if (c == EOF)
-            return nullptr;
+        if (c == EOF) {
+            if (ferror(stream)) return nullptr;
+            else                break;
+        }
+
         str[i] = (char)c;
     }
     str[i] = '\0';
